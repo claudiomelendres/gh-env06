@@ -9,4 +9,4 @@ app.use(bodyParser.json());
 
 app.use(eventRoutes);
 
-app.listen(process.env.PORT || 8081);
+app.listen(process.env.PORT || 8082);
