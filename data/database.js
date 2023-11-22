@@ -7,7 +7,9 @@ const dbPassword = process.env.MONGODB_PASSWORD || "jdaniel3210.";
 const dbName = process.env.MONGODB_DB_NAME || "eshop-database";
 
 // const uri = `mongodb+srv://${dbUser}:${dbPassword}@${clusterAddress}/?retryWrites=true&w=majority`;
-const uri = `mongodb+srv://cayo999:jdaniel3210.@cluster0.9xxlj.mongodb.net/eshop-database?retryWrites=true&w=majority`;
+// const uri = `mongodb+srv://cayo999:jdaniel3210.@cluster0.9xxlj.mongodb.net/eshop-database?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://${dbUser}:jdaniel3210.@cluster0.9xxlj.mongodb.net/eshop-database?retryWrites=true&w=majority`;
+
 const client = new MongoClient(uri, { useNewUrlParser: true });
 
 console.log("Trying to connect to db");
